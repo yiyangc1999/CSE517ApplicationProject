@@ -62,7 +62,7 @@ def main():
         rmseTe = mean_squared_error(yTe, yPred, squared=False)
         if k == 2:
             print("Training RMSE = ", rmseTr)
-            print("Training RMSE = ", rmseTe)
+            print("Testing RMSE = ", rmseTe)
 
         rmseTrList = np.append(rmseTrList, rmseTr)
         rmseTeList = np.append(rmseTeList, rmseTe)
